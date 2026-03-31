@@ -1,1 +1,1 @@
-rootProject.name = "g-backend-template"
+rootProject.name = "home-backend-template"

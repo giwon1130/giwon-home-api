@@ -1,4 +1,4 @@
-package com.giwon.gtemplate.features.health
+package com.giwon.hometemplate.features.health
 
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired

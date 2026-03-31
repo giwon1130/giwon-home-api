@@ -1,6 +1,6 @@
-package com.giwon.gtemplate.features.health
+package com.giwon.hometemplate.features.health
 
-import com.giwon.gtemplate.common.ApiResponse
+import com.giwon.hometemplate.common.ApiResponse
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController

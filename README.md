@@ -1,4 +1,4 @@
-# G Backend Template
+# Home Backend Template
 
 Kotlin + Spring Boot starter template for personal backend services.
 
@@ -26,10 +26,12 @@ cp .env.example .env
 
 ## Project Structure
 ```
-src/main/kotlin/com/giwon/gtemplate
-├── GBackendTemplateApplication.kt
+src/main/kotlin/com/giwon/hometemplate
+├── HomeBackendTemplateApplication.kt
 ├── common/
 └── features/
+    ├── auth/
+    ├── project/
     └── health/
 ```
 

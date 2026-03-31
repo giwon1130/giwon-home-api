@@ -1,11 +1,11 @@
-package com.giwon.gtemplate
+package com.giwon.hometemplate
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.SpringApplication
 
 @SpringBootApplication
-class GBackendTemplateApplication
+class HomeBackendTemplateApplication
 
 fun main(args: Array<String>) {
-    SpringApplication.run(GBackendTemplateApplication::class.java, *args)
+    SpringApplication.run(HomeBackendTemplateApplication::class.java, *args)
 }

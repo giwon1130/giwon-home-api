@@ -1,6 +1,6 @@
 spring:
   application:
-    name: g-backend-template
+    name: home-backend-template
 
 server:
   port: ${SERVER_PORT:8081}
