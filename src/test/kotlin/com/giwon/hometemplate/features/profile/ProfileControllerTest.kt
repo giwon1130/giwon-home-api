@@ -1,6 +1,5 @@
-package com.giwon.hometemplate.features.project
+package com.giwon.hometemplate.features.profile
 
-import com.fasterxml.jackson.databind.ObjectMapper
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc
@@ -12,22 +11,17 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 
 @SpringBootTest
 @AutoConfigureMockMvc
-class ProjectControllerTest {
+class ProfileControllerTest {
 
     @Autowired
     lateinit var mockMvc: MockMvc
 
-    @Autowired
-    lateinit var objectMapper: ObjectMapper
-
     @Test
-    fun `projects endpoint returns public project list`() {
-        mockMvc.perform(get("/api/projects"))
+    fun `profile endpoint returns public profile`() {
+        mockMvc.perform(get("/api/profile"))
             .andExpect(status().isOk)
             .andExpect(jsonPath("$.success").value(true))
-            .andExpect(jsonPath("$.data.length()").value(3))
-            .andExpect(jsonPath("$.data[0].id").value("PROJECT-001"))
-            .andExpect(jsonPath("$.data[0].category").value("Public Data / GIS"))
-            .andExpect(jsonPath("$.data[0].primaryUrl").value("https://github.com/giwon1130/emergency-room-frontend"))
+            .andExpect(jsonPath("$.data.name").value("임기원"))
+            .andExpect(jsonPath("$.data.links.github").value("https://github.com/giwon1130"))
     }
 }

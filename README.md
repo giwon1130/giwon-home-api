@@ -1,6 +1,6 @@
 # Home Backend Template
 
-Kotlin + Spring Boot starter template for personal backend services.
+공개용 프로젝트 허브와 자기소개 페이지를 위한 Kotlin + Spring Boot 백엔드입니다.
 
 ## Stack
 - Kotlin 1.9
@@ -9,8 +9,9 @@ Kotlin + Spring Boot starter template for personal backend services.
 - JUnit 5
 
 ## What Included
-- `POST /api/auth/login`: login with demo account and issue bearer token
-- `GET /api/projects`: return project list for authenticated user
+- `GET /api/profile`: 공개 프로필 정보 제공
+- `GET /api/projects`: 공개 프로젝트 카탈로그 제공
+- 기존 로그인 API는 템플릿 용도로 유지
 - Feature modules use `controller -> service -> parser -> repository` layering
 
 ## Quick Start
@@ -24,22 +25,15 @@ cp .env.example .env
 
 Server default: `http://localhost:8081`
 
-## Demo Account
-- Email: `demo@home.io`
-- Password: `home1234`
-
 ## API
-### 1) Login
+### 1) Profile
 ```bash
-curl -X POST http://localhost:8081/api/auth/login \
-  -H "Content-Type: application/json" \
-  -d '{"email":"demo@home.io","password":"home1234"}'
+curl http://localhost:8081/api/profile
 ```
 
 ### 2) Get Projects
 ```bash
-curl http://localhost:8081/api/projects \
-  -H "Authorization: Bearer <TOKEN_FROM_LOGIN>"
+curl http://localhost:8081/api/projects
 ```
 
 ## Commands
@@ -74,10 +68,9 @@ src/main/kotlin/com/giwon/hometemplate
 
 ## Notes
 - This template uses in-memory repositories for demo speed.
-- Replace repository layer with DB implementation when moving to production.
+- 공개 허브/포트폴리오용 API를 먼저 제공하는 구조다.
 
 ## Next Extensions
-- Add `bootstrap/` configs (security, db, swagger)
-- Add domain folders under `features/<domain>`
-- Add Flyway migrations under `src/main/resources/db/migration`
-- Add scheduled modules (for example: weather/news summary and notification delivery)
+- profile/projects 데이터를 파일 또는 DB로 분리
+- 대표 프로젝트 정렬/필터 추가
+- 공개 링크 외에 상세 설명 페이지 추가

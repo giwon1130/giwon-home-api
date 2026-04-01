@@ -10,7 +10,7 @@ class ProjectService(
     private val projectRepository: ProjectRepository,
     private val projectParser: ProjectParser,
 ) {
-    fun getProjectsByEmail(email: String): List<ProjectResponse> =
-        projectRepository.findProjectsByEmail(email)
+    fun getProjects(): List<ProjectResponse> =
+        projectRepository.findAll()
             .map(projectParser::toResponse)
 }
