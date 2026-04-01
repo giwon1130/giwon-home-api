@@ -1,1 +1,1 @@
-rootProject.name = "home-backend-template"
+rootProject.name = "giwon-home-api"
