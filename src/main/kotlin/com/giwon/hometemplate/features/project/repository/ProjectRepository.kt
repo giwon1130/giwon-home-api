@@ -33,11 +33,11 @@ class ProjectRepository {
             name = "AI Assistant API",
             status = "BUILDING",
             category = "Productivity / AI",
-            summary = "아침 브리핑, 일정 요약, 아이디어 정리를 제공하는 개인용 AI 비서 API",
+            summary = "아침 브리핑, 뉴스/날씨 요약, 아이디어 저장과 브리핑 이력 관리를 제공하는 개인용 AI 비서 API",
             liveUrl = "http://localhost:4173/assistant",
             repositoryUrl = "https://github.com/giwon1130/giwon-assistant-api",
             docsUrl = "https://www.notion.so/dev-giwon/ce2318d46f3a4b66894ad04d1b20d986",
-            tags = listOf("Kotlin", "Spring Boot", "OpenAI", "Automation", "Calendar")
+            tags = listOf("Kotlin", "Spring Boot", "OpenAI", "Automation", "Calendar", "RSS", "JPA")
         ),
         Project(
             id = "PROJECT-004",
