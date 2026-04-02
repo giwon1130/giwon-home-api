@@ -23,7 +23,7 @@ class ProjectRepository {
             status = "BUILDING",
             category = "Portfolio / Platform",
             summary = "여러 개인 프로젝트와 공개 저장소를 한 곳에서 소개하고 연결하는 공개용 허브 서비스",
-            liveUrl = null,
+            liveUrl = "http://localhost:4173",
             repositoryUrl = "https://github.com/giwon1130/giwon-home-api",
             docsUrl = "https://github.com/giwon1130/giwon-home",
             tags = listOf("React", "Vite", "Kotlin", "Spring Boot")
@@ -34,7 +34,7 @@ class ProjectRepository {
             status = "BUILDING",
             category = "Productivity / AI",
             summary = "아침 브리핑, 일정 요약, 아이디어 정리를 제공하는 개인용 AI 비서 API",
-            liveUrl = null,
+            liveUrl = "http://localhost:4173/assistant",
             repositoryUrl = "https://github.com/giwon1130/giwon-assistant-api",
             docsUrl = "https://www.notion.so/dev-giwon/ce2318d46f3a4b66894ad04d1b20d986",
             tags = listOf("Kotlin", "Spring Boot", "OpenAI", "Automation", "Calendar")
@@ -45,7 +45,7 @@ class ProjectRepository {
             status = "BUILDING",
             category = "Housing / Decision Support",
             summary = "입지, 예산, 출퇴근 기준을 함께 비교해 주거 선택을 돕는 프론트엔드 MVP",
-            liveUrl = null,
+            liveUrl = "http://127.0.0.1:4174",
             repositoryUrl = "https://github.com/giwon1130/HomeHarmony",
             docsUrl = null,
             tags = listOf("React", "TypeScript", "Vite", "Housing", "Comparison")
