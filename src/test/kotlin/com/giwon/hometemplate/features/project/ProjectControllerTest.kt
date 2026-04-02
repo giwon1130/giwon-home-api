@@ -25,12 +25,14 @@ class ProjectControllerTest {
         mockMvc.perform(get("/api/projects"))
             .andExpect(status().isOk)
             .andExpect(jsonPath("$.success").value(true))
-            .andExpect(jsonPath("$.data.length()").value(3))
+            .andExpect(jsonPath("$.data.length()").value(4))
             .andExpect(jsonPath("$.data[0].id").value("PROJECT-001"))
             .andExpect(jsonPath("$.data[0].category").value("Public Data / GIS"))
             .andExpect(jsonPath("$.data[0].repositoryUrl").value("https://github.com/giwon1130/emergency-room-backend"))
             .andExpect(jsonPath("$.data[0].docsUrl").value("https://github.com/giwon1130/emergency-room-frontend"))
             .andExpect(jsonPath("$.data[2].name").value("AI Assistant API"))
             .andExpect(jsonPath("$.data[2].repositoryUrl").value("https://github.com/giwon1130/giwon-assistant-api"))
+            .andExpect(jsonPath("$.data[3].name").value("HomeHarmony"))
+            .andExpect(jsonPath("$.data[3].repositoryUrl").value("https://github.com/giwon1130/HomeHarmony"))
     }
 }

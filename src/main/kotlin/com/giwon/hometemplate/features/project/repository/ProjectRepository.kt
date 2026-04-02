@@ -39,6 +39,17 @@ class ProjectRepository {
             docsUrl = "https://www.notion.so/dev-giwon/ce2318d46f3a4b66894ad04d1b20d986",
             tags = listOf("Kotlin", "Spring Boot", "OpenAI", "Automation", "Calendar")
         ),
+        Project(
+            id = "PROJECT-004",
+            name = "HomeHarmony",
+            status = "BUILDING",
+            category = "Housing / Decision Support",
+            summary = "입지, 예산, 출퇴근 기준을 함께 비교해 주거 선택을 돕는 프론트엔드 MVP",
+            liveUrl = null,
+            repositoryUrl = "https://github.com/giwon1130/HomeHarmony",
+            docsUrl = null,
+            tags = listOf("React", "TypeScript", "Vite", "Housing", "Comparison")
+        ),
     )
 
     fun findAll(): List<Project> = projects
