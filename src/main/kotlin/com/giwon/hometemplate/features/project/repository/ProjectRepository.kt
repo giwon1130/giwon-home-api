@@ -55,7 +55,7 @@ class ProjectRepository {
             name = "TripMemo",
             status = "BUILDING",
             category = "Travel / Memo",
-            summary = "여행(trip), 장소, 메모를 함께 묶어 기록하는 구조를 구현한 여행 기록 서비스 백엔드",
+            summary = "여행(trip), 장소, 메모를 함께 묶고 상세/타임라인 조회까지 제공하는 여행 기록 서비스 백엔드",
             liveUrl = null,
             repositoryUrl = "https://github.com/giwon1130/TripMemo",
             docsUrl = null,
