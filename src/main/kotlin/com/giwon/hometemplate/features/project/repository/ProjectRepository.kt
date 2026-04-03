@@ -66,7 +66,7 @@ class ProjectRepository {
             name = "MetroPulse",
             status = "BUILDING",
             category = "Transit / Public Data",
-            summary = "실시간 지하철 도착정보 OpenAPI와 30분 단위 평균 혼잡도, 시계열, 출근길 알림, 자주 보는 역 추천을 함께 제공하는 교통 서비스",
+            summary = "실시간 지하철 도착정보 OpenAPI와 30분 단위 평균 혼잡도, 환승역 다중 노선 표시, 시계열, 출근길 알림을 함께 제공하는 교통 서비스",
             liveUrl = null,
             repositoryUrl = "https://github.com/giwon1130/metro-pulse-backend",
             docsUrl = "https://github.com/giwon1130/metro-pulse-frontend",
