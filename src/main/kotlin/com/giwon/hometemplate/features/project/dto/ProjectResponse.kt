@@ -5,6 +5,7 @@ data class ProjectResponse(
     val name: String,
     val status: String,
     val category: String,
+    val headline: String?,
     val summary: String,
     val liveUrl: String?,
     val repositoryUrl: String?,

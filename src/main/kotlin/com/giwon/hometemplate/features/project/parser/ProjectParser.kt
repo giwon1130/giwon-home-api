@@ -12,6 +12,7 @@ class ProjectParser {
             name = project.name,
             status = project.status,
             category = project.category,
+            headline = project.headline,
             summary = project.summary,
             liveUrl = project.liveUrl,
             repositoryUrl = project.repositoryUrl,
