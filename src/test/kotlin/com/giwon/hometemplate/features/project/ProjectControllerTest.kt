@@ -56,7 +56,7 @@ class ProjectControllerTest {
             .andExpect(jsonPath("$.data[7].liveUrl").value("http://localhost:4177"))
             .andExpect(jsonPath("$.data[7].repositoryUrl").value("https://github.com/giwon1130/shelter-now-backend"))
             .andExpect(jsonPath("$.data[8].name").value("SignalDesk"))
-            .andExpect(jsonPath("$.data[8].headline").value("한국·미국 시장 시그널과 실험 대체지표를 웹·모바일로 함께 읽는 개인용 시장 인텔리전스 허브"))
+            .andExpect(jsonPath("$.data[8].headline").value("한국·미국 시장 시그널과 Pizza·Bar 실험 대체지표를 웹·모바일로 함께 읽는 개인용 시장 인텔리전스 허브"))
             .andExpect(jsonPath("$.data[8].liveUrl").value("http://localhost:4180"))
             .andExpect(jsonPath("$.data[8].repositoryUrl").value("https://github.com/giwon1130/signal-desk"))
             .andExpect(jsonPath("$.data[8].docsUrl").value("https://github.com/giwon1130/signal-desk-web"))
